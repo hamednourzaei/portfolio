@@ -40,19 +40,19 @@ const Projects = () => {
    ];
 
    return (
-      <div className="w-full min-h-screen bg-gray-100">
+      <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-800  ">
          <Navbar />
          <div className="flex flex-col justify-start items-center gap-4 px-5 py-20">
-         <h1 className="  w-full text-3xl font-bold text-gray-800">Projects</h1> 
+         <h1 className="  w-full text-3xl font-bold  text-gray-800">Projects</h1> 
 
             <div className="w-full flex flex-wrap justify-start items-center gap-6 px-4">
                {projects.map((item, index) => (
                   <div
                      key={index}
-                     className="cursor-pointer border-2 border-gray-200 bg-white shadow-lg w-full sm:w-[350px] md:w-[400px] h-[200px] rounded-xl flex flex-col justify-between items-center p-4 group hover:scale-100 transition-transform duration-300"
+                     className="cursor-pointer border-2 border-gray-200 backdrop-brightness-50 shadow-lg w-full sm:w-[350px] md:w-[400px] h-[200px] rounded-xl flex flex-col justify-between items-center p-4 group hover:scale-100 transition-transform duration-300"
                   >
                      <div className="w-full flex flex-col justify-start items-start">
-                        <h1 className="text-black font-semibold text-lg">{item.title}</h1>
+                        <h1 className="text-white font-semibold text-lg truncate">{item.title}</h1>
                         <p className="text-gray-600 text-sm text-ellipsis line-clamp-3 mt-1">{item.description}</p>
                      </div>
 

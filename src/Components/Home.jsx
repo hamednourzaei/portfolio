@@ -19,11 +19,11 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="text-center md:text-left flex flex-col items-center md:items-start gap-6">
-                    <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-dark-muted via-dark-hover to-dark-muted animate-gradient">
+                <div className="text-center md:text-left  flex flex-col items-center md:items-start gap-6">
+                    <h1 className="text-5xl md:text-6xl text-white font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-dark-muted via-dark-hover to-dark-muted animate-gradient">
                         Frontend Developer
                     </h1>
-                    <p className="text-lg md:text-xl text-dark-muted max-w-2xl leading-relaxed">
+                    <p className="text-lg md:text-xl text-white max-w-2xl leading-relaxed">
                         Crafting seamless digital experiences with modern technologies like{' '}
                         <span className="text-blue-600 font-medium">React</span>,{' '}
                         <span className="text-teal-600 font-medium">Redux</span>, and{' '}
@@ -32,7 +32,7 @@ const Home = () => {
                     </p>
                     <a
                         href="#portfolio"
-                        className="mt-4 px-6 py-3 bg-gradient-to-r from-dark-muted via-dark-hover to-dark-muted text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500"
+                        className="mt-4 px-6 py-3 text-white backdrop-brightness-150 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500"
                     >
                         View My Work
                     </a>

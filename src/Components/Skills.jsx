@@ -18,7 +18,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 pt-20">
+    <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-800 pt-20">
       <Navbar />
       <div className="flex flex-col justify-start items-center gap-8 px-5 py-20">
         <h1 className="w-full text-4xl font-extrabold text-gray-100 text-center" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}>
@@ -33,7 +33,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-700 to-purple-600 p-6 rounded-xl shadow-lg shadow-indigo-800/50 w-28 sm:w-36 h-28 sm:h-32 transform transition duration-500 hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-indigo-700/50 animate-fadeIn"
+              className="flex animate-pulseIcon flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-700 to-purple-600 p-6 rounded-xl shadow-lg shadow-indigo-800/50 w-28 sm:w-36 h-28 sm:h-32 transform transition duration-500 hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-indigo-700/50 animate-fadeIn"
             >
               <div className="animate-bounceIcon">{skill.icon}</div>
               <h2 className="text-gray-100 text-base sm:text-lg font-semibold mt-4 animate-fadeIn">
