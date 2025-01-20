@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="text-center md:text-left  flex flex-col items-center md:items-start gap-6">
+                <div className="text-center md:text-left font-sans flex flex-col items-center md:items-start gap-6">
                 <h1 className="text-3xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg">
                 Frontend Developer | متخصص در طراحی و توسعه رابط‌های کاربری مدرن
   </h1>

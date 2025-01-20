@@ -6,6 +6,10 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { GiMaterialsScience } from "react-icons/gi";
+
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, PointElement, CategoryScale, LinearScale } from 'chart.js';
 
@@ -24,13 +28,13 @@ const Skills = () => {
    
     { title: 'ES6+', icon: <IoLogoJavascript className="text-6xl text-yellow-500" />, percentage: 90 },
     { title: 'React.js', icon: <FaReact className="text-6xl text-cyan-400" />, percentage: 90 },
-    { title: 'Next.js', icon: <IoLogoJavascript className="text-6xl text-black" />, percentage: 85 },
+    { title: 'Next.js', icon: <FaReact className="text-6xl text-black" />, percentage: 85 },
     { title: 'Redux', icon: <IoLogoJavascript className="text-6xl text-purple-500" />, percentage: 80 },
     { title: 'Redux and RTK', icon: <SiRedux className="text-6xl text-purple-600" />, percentage: 85 },
     { title: 'RxJS', icon: <IoLogoJavascript className="text-6xl text-red-500" />, percentage: 75 },
-    { title: 'Git', icon: <IoLogoJavascript className="text-6xl text-red-600" />, percentage: 85 },
-    { title: 'Bootstrap', icon: <IoLogoJavascript className="text-6xl text-purple-700" />, percentage: 80 },
-    { title: 'MaterialUI', icon: <IoLogoJavascript className="text-6xl text-blue-600" />, percentage: 75 },
+    { title: 'Git', icon: <FaGithub  className="text-6xl text-red-600" />, percentage: 85 },
+    { title: 'Bootstrap', icon: <FaBootstrap   className="text-6xl text-purple-700" />, percentage: 80 },
+    { title: 'MaterialUI', icon: <GiMaterialsScience  className="text-6xl text-blue-600" />, percentage: 75 },
     { title: 'React-Router-Dom', icon: <FaReact className="text-6xl text-red-500" />, percentage: 85 },
     { title: 'React SWR', icon: <FaReact className="text-6xl text-green-400" />, percentage: 80 },
     { title: 'API Context', icon: <FaReact className="text-6xl text-cyan-500" />, percentage: 85 },
