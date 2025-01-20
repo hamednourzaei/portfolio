@@ -8,50 +8,96 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+
+  
     {
-      title: "Employee Task Management System",
-      description:
-        "A responsive task management system where admins can assign tasks to employees, with individual dashboards for better task tracking.",
-      technologies: ["React", "Context API", "Tailwind CSS", "LocalStorage", "CSS"],
+      title: " برنامه احراز هویت",
+      description:"برنامه احراز هویت یک سیستم قدرتمند و ایمن برای مدیریت احراز هویت و مجوزهای کاربران است. این پروژه با استفاده از تکنولوژی‌های مدرن وب طراحی شده و از ویژگی‌هایی مانند کنترل دسترسی مبتنی بر نقش، احراز هویت توکنی امن و رابط کاربری کاربرپسند پشتیبانی می‌کند. این مخزن برای توسعه‌دهندگانی که به دنبال پیاده‌سازی یا یادگیری سیستم‌های احراز هویت مقیاس‌پذیر هستند، گزینه‌ای ایده‌آل است.",
+      technologies: ["React", "Express.js","MongoDB","Node.js", "Tailwind CSS", "HTML", "CSS"],
       features: [
-        "Admin dashboard for task assignment",
-        "Employee dashboard to view assigned tasks",
-        "Responsive design for all devices",
-        "Login functionality using localStorage",
-        "State management with Context API",
-      ],
-   
-      github: "https://github.com/Code-with-Sahani/Employee-Task-Management-System",
-    },
-    {
-      title: "Optical Character Recognition System",
-      description:
-        "A system that extracts text from images using OCR technology, with features for text editing and saving.",
-      technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
-      features: [
-        "Extract text from uploaded images",
-        "Real-time text recognition using OCR technology",
-        "Editable extracted text with options to modify",
-        "Save extracted text locally for future use",
-        "Supports multiple image formats like JPEG, PNG, etc.",
+        "ثبت‌نام و ورود کاربران:",
+        "کنترل دسترسی مبتنی بر نقش (RBAC):",
+        "احراز هویت مبتنی بر توکن:",
+        "مستندات API:",
+        "مدیریت خطاها:",
       ],
     
-      github: "https://github.com/Code-with-Sahani/Optical-Character-Recognition-System",
+      github: "https://github.com/hamedmkm/authentication-app",
     },
     {
-      title: "Optical Character Recognition System",
+      title: "",
       description:
-        "A system that extracts text from images using OCR technology, with features for text editing and saving.",
+        "",
       technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
       features: [
-        "Extract text from uploaded images",
-        "Real-time text recognition using OCR technology",
-        "Editable extracted text with options to modify",
-        "Save extracted text locally for future use",
-        "Supports multiple image formats like JPEG, PNG, etc.",
+        "",
+        "",
+        "",
+        "",
+        "",
       ],
     
-      github: "https://github.com/Code-with-Sahani/Optical-Character-Recognition-System",
+      github: "",
+    },
+    {
+      title: "",
+      description:
+        "",
+      technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
+      features: [
+        "",
+        "",
+        "",
+        "",
+        "",
+      ],
+    
+      github: "",
+    },
+    {
+      title: "",
+      description:
+        "",
+      technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
+      features: [
+        "",
+        "",
+        "",
+        "",
+        "",
+      ],
+    
+      github: "",
+    },
+    {
+      title: "",
+      description:
+        "",
+      technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
+      features: [
+        "",
+        "",
+        "",
+        "",
+        "",
+      ],
+    
+      github: "",
+    },
+    {
+      title: "",
+      description:
+        "",
+      technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
+      features: [
+        "",
+        "",
+        "",
+        "",
+        "",
+      ],
+    
+      github: "",
     },
   ];
 
@@ -62,20 +108,20 @@ const Projects = () => {
         <h1 className="w-full p-5 text-3xl font-bold text-gray-100 text-center">
           Projects
         </h1>
-
+    
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 w-full max-w-7xl justify-center items-center">
           {projects.map((item, index) => (
             <div
               key={index}
               className="cursor-pointer border-2 border-gray-200 bg-gray-800 shadow-lg w-full h-[250px] sm:h-[300px] rounded-xl flex flex-col justify-between items-center p-6 group animate-fadeAndBounce"
             >
-              <div className="w-full flex flex-col justify-start items-start">
+              <div className="w-full flex flex-col justify-end items-end">
                 <h1 className="text-white font-semibold text-lg ">
                   {item.title}
                 </h1>
-                <p className="text-gray-400 text-sm mt-2 line-clamp-3">
-                  {item.description}
-                </p>
+                <p className="text-[#abaaaa] text-right line-clamp-5 text-ellipsis  overflow-hidden text-lg mt-2 leading-relaxed">
+            {item.description}
+          </p>
               </div>
               <div className="w-full flex justify-between items-center mt-6">
                 <a
@@ -101,28 +147,68 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Details Modal */}
-        {modalValue && selectedProject && (
-          <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-            <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg p-6">
-              <div className="flex justify-between items-center">
-                <h1 className="text-2xl font-semibold">
-                  {selectedProject.title}
-                </h1>
-                <ImCross
-                  className="cursor-pointer text-2xl"
-                  onClick={() => setModalValue(false)}
-                />
-              </div>
-              <div className="mt-4">
-                <h2 className="text-lg font-semibold text-gray-700">
-                  Description
-                </h2>
-                <p className="text-gray-600">{selectedProject.description}</p>
-              </div>
-            </div>
-          </div>
-        )}
+     {/* Details Modal */}
+     {modalValue && selectedProject && (
+  <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50 transition-opacity duration-300 ease-in-out">
+    <div className="w-full h-[90%] max-w-4xl bg-gradient-to-r from-gray-100 to-gray-200 rounded-xl shadow-2xl p-8 transform transition-all duration-500 scale-105">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-3xl font-extrabold text-gray-800">
+          {selectedProject.title}
+        </h1>
+        <ImCross
+          className="cursor-pointer text-xl text-gray-600 hover:text-red-500 transition duration-300"
+          onClick={() => setModalValue(false)}
+        />
+      </div>
+
+      <div className="space-y-6 max-h-[80%] overflow-y-auto">
+        {/* Description */}
+        <div>
+          <h2 className="text-xl font-semibold text-purple-600">Description</h2>
+          <p className="text-gray-700 text-lg mt-2 leading-relaxed">
+            {selectedProject.description}
+          </p>
+        </div>
+
+        {/* Technologies */}
+        <div>
+          <h2 className="text-xl font-semibold text-blue-600">Technologies</h2>
+          <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+            {selectedProject.technologies.map((tech, index) => (
+              <li key={index}>{tech}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Features */}
+        <div>
+          <h2 className="text-xl font-semibold text-green-600">Features</h2>
+          <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+            {selectedProject.features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* GitHub Link */}
+      {selectedProject.github && (
+        <div className="mt-6 text-right">
+          <a
+            href={selectedProject.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700 transition duration-300"
+          >
+            View on GitHub
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+)}
+
+
       </div>
     </div>
   );
