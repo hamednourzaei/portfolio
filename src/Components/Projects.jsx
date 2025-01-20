@@ -129,18 +129,18 @@ const Projects = () => {
       github: "https://github.com/hamedmkm/ticket-booking-portfolio",
     },
     {
-      title: "پورتفولیوی رزرو بلیط",
+      title: " (Crypto-list) فهرست ارزهای دیجیتال    ",
       description:
-        "پروژه‌  برای رزرو بلیط ساخته شده با ری اکت   این پروژه شامل عملکردهای اصلی برای یک پلتفرم رزرو بلیط است.",
+        "مجموعه‌ای گردآوری‌شده از منابع مرتبط با بلاک‌چین و ارزهای دیجیتال، شامل کدهای منبع، کیف‌پول‌ها، صرافی‌ها، مطالب آموزشی و ابزارهای مرتبط با بلاک‌چین.",
       technologies: ["React", "OCR API", "Tailwind CSS", "HTML", "CSS"],
       features: [
         "(Vite) توسعه سریع با ",
         "(Tailwind CSS) استایل‌دهی با ",
-        "  امکان نمایش خلاصه‌ای از اطلاعات غذاها ",
+        "  reactjs: برای ذخیره و مدیریت داده‌های مربوط به ارزهای دیجیتال",
         "تنظیمات (ESLint) برای کیفیت کد",
       ],
 
-      github: "https://github.com/hamedmkm/ticket-booking-portfolio",
+      github: "https://github.com/hamedmkm/Crypto-list",
     },
   ];
 
