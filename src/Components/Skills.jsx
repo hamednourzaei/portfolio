@@ -13,15 +13,33 @@ import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, PointElement, Ca
 ChartJS.register(Title, Tooltip, Legend, LineElement, PointElement, CategoryScale, LinearScale);
 
 const Skills = () => {
+
   const skills = [
     { title: 'HTML', icon: <FaHtml5 className="text-6xl text-orange-500" />, percentage: 90 },
-    { title: 'CSS', icon: <FaCss3Alt className="text-6xl text-blue-500" />, percentage: 80 },
+
+    { title: 'CSS3', icon: <FaCss3Alt className="text-6xl text-blue-500" />, percentage: 85 },
+ 
     { title: 'Tailwind CSS', icon: <RiTailwindCssFill className="text-3xl text-teal-400" />, percentage: 80 },
     { title: 'JavaScript', icon: <IoLogoJavascript className="text-6xl text-yellow-400" />, percentage: 85 },
-    { title: 'React', icon: <FaReact className="text-6xl text-cyan-400" />, percentage: 90 },
-    { title: 'Redux', icon: <SiRedux className="text-6xl text-purple-500" />, percentage: 80 },
-  ];
-
+   
+    { title: 'ES6+', icon: <IoLogoJavascript className="text-6xl text-yellow-500" />, percentage: 90 },
+    { title: 'React.js', icon: <FaReact className="text-6xl text-cyan-400" />, percentage: 90 },
+    { title: 'Next.js', icon: <IoLogoJavascript className="text-6xl text-black" />, percentage: 85 },
+    { title: 'Redux', icon: <IoLogoJavascript className="text-6xl text-purple-500" />, percentage: 80 },
+    { title: 'Redux and RTK', icon: <SiRedux className="text-6xl text-purple-600" />, percentage: 85 },
+    { title: 'RxJS', icon: <IoLogoJavascript className="text-6xl text-red-500" />, percentage: 75 },
+    { title: 'Git', icon: <IoLogoJavascript className="text-6xl text-red-600" />, percentage: 85 },
+    { title: 'Bootstrap', icon: <IoLogoJavascript className="text-6xl text-purple-700" />, percentage: 80 },
+    { title: 'MaterialUI', icon: <IoLogoJavascript className="text-6xl text-blue-600" />, percentage: 75 },
+    { title: 'React-Router-Dom', icon: <FaReact className="text-6xl text-red-500" />, percentage: 85 },
+    { title: 'React SWR', icon: <FaReact className="text-6xl text-green-400" />, percentage: 80 },
+    { title: 'API Context', icon: <FaReact className="text-6xl text-cyan-500" />, percentage: 85 },
+    { title: 'useReducer', icon: <FaReact className="text-6xl text-blue-500" />, percentage: 80 },
+    { title: 'useEffect', icon: <FaReact className="text-6xl text-green-400" />, percentage: 85 }, { title: 'useState', icon: <FaReact className="text-6xl text-green-400" />, percentage: 85 },
+    { title: 'useMemo', icon: <FaReact className="text-6xl text-teal-400" />, percentage: 75 },
+    { title: 'useSWR', icon: <FaReact className="text-6xl text-yellow-400" />, percentage: 80 },
+   
+];
   // Data for Line Chart
   const data = {
     labels: skills.map(skill => skill.title),
