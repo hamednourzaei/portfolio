@@ -51,7 +51,7 @@ const Skills = () => {
     <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-800 pt-20">
       <Navbar />
       <div className="flex flex-col justify-start items-center gap-8 px-5 py-20">
-        <h1 className="w-full text-4xl font-extrabold text-gray-100 text-center" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}>
+        <h1 className="w-full bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-800 text-4xl font-extrabold text-gray-100 text-center" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}>
           My Skills
         </h1>
         <span className="text-lg text-gray-300 mt-2 text-center" style={{ textShadow: '1px 1px 6px rgba(0, 0, 0, 0.5)' }}>

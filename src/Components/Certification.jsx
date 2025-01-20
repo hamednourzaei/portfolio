@@ -33,7 +33,12 @@ const Certification = () => {
     <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900">
       <Navbar />
       <div className="flex flex-col justify-center items-center gap-8 px-5 py-20">
-        <h1 className="w-full text-3xl font-bold text-gray-100 text-center">Certifications</h1>
+      <h1
+  className="w-full p-5 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg text-center"
+  style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}
+>
+  Certifications
+</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
           {certifications.map((cert, index) => (
             <div

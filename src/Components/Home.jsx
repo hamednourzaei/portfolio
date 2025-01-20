@@ -20,19 +20,30 @@ const Home = () => {
                 </div>
 
                 <div className="text-center md:text-left  flex flex-col items-center md:items-start gap-6">
-                    <h1 className="text-5xl md:text-6xl text-white font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-dark-muted via-dark-hover to-dark-muted animate-gradient">
-                        Frontend Developer
-                    </h1>
-                    <p className="text-lg md:text-xl text-white max-w-2xl leading-relaxed">
-                        Crafting seamless digital experiences with modern technologies like{' '}
-                        <span className="text-blue-600 font-medium">React</span>,{' '}
-                        <span className="text-teal-600 font-medium">Redux</span>, and{' '}
-                        <span className="text-purple-600 font-medium">Tailwind CSS</span>. Specializing in building
-                        responsive, dynamic, and visually stunning user interfaces.
-                    </p>
+                <h1 className="text-3xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg">
+                Frontend Developer | متخصص در طراحی و توسعه رابط‌های کاربری مدرن
+  </h1>
+
+  <p className="text-lg  text-right md:text-xl text-gray-200 max-w-2xl leading-relaxed justify-items-end ml-auto">
+  دنیای توسعه وب پر از فرصت‌های ناب برای خلاقیت و نوآوری است. ابزارهایی مدرن و کارآمد، امکان طراحی تجربه‌هایی چشم‌نواز و کاربرپسند را فراهم می‌کنند. 
+  فناوری‌های پیشرفته با ارتقای سرعت و عملکرد، پروژه‌ها را به سطحی بالاتر می‌برند و مدیریت بهتر را به همراه می‌آورند. 
+  یادگیری و استفاده از مفاهیم نوین برنامه‌نویسی، مسیری پویا و بی‌پایان برای رشد و خلق ایده‌های تازه فراهم می‌کند. 
+  در این مسیر، هر ابزار و روش جدید، گامی به سوی آینده‌ای خلاقانه‌تر و مؤثرتر 
+است
+  
+
+
+
+
+</p>
+
+
+
+
                     <a
                         href="https://github.com/hamedmkm"
-                        className="mt-4 px-6 py-3 text-white backdrop-brightness-150 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500"
+                        className="mt-4 px-6 py-3 bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg backdrop-brightness-150 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500
+                        justify-items-end ml-auto"
                     >
                         View My Work
                     </a>

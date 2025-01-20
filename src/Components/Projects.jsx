@@ -105,9 +105,9 @@ const Projects = () => {
     <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900">
       <Navbar />
       <div className="flex flex-col justify-start items-center gap-10 px-5 py-20">
-        <h1 className="w-full p-5 text-3xl font-bold text-gray-100 text-center">
-          Projects
-        </h1>
+      <h1 className="w-full p-5 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg text-center">
+  Projects
+</h1>
     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 w-full max-w-7xl justify-center items-center">
           {projects.map((item, index) => (
@@ -119,7 +119,7 @@ const Projects = () => {
                 <h1 className="text-white font-semibold text-lg ">
                   {item.title}
                 </h1>
-                <p className="text-[#abaaaa] text-right line-clamp-5 text-ellipsis  overflow-hidden text-lg mt-2 leading-relaxed">
+                <p className="text-[#abaaaa] text-right line-clamp-4 text-ellipsis  overflow-hidden text-lg mt-2 leading-relaxed">
             {item.description}
           </p>
               </div>
