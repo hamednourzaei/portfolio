@@ -7,11 +7,11 @@ const Home = () => {
             <Navbar />
 
             <div className="flex flex-1 flex-col md:flex-row items-center justify-center gap-16 px-6">
-                <div className="group w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-gray-900 shadow-lg transition-transform duration-500 hover:scale-110 relative">
+                <div className="group w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-gray-900 shadow-lg transition-transform duration-500 hover:scale-110 relative m-3">
                     <img
                         src="/Images/profile_img.png"
                         alt="Profile"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full  h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-accent opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-dark-text text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
