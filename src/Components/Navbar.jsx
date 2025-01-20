@@ -7,30 +7,27 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-[#1e1e1e] via-gray-900 to-[#1d1d1d] text-gray-200 z-50 shadow-lg">
+        <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-100 z-50 shadow-md border-b border-gray-600">
             <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center py-4">
-                {/* Brand */}
-                <div className="text-2xl font-bold text-gray-200 hover:text-gray-400 transition duration-300">
+                <div className="text-2xl font-bold text-dark-text hover:text-gray-400 transition duration-300">
                     <Link to="/">My Portfolio</Link>
                 </div>
 
-                {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 items-center">
                     {['Home', 'Skills', 'Projects', 'Certification', 'Contact'].map((item) => (
                         <Link
                             key={item}
                             to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                            className="text-lg text-gray-200 hover:text-gray-400 relative group transition duration-300"
+                            className="text-lg text-dark-text hover:text-gray-400 relative group transition duration-300"
                         >
                             {item}
-                            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-200 group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-dark-text group-hover:w-full transition-all duration-300"></span>
                         </Link>
                     ))}
                 </div>
 
-                {/* Hamburger Menu for Mobile */}
                 <button
-                    className="md:hidden text-gray-200 p-2 rounded-full hover:bg-gray-700 hover:text-white transition duration-300"
+                    className="md:hidden text-dark-text p-2 rounded-full hover:bg-gray-700 hover:text-white transition duration-300"
                     onClick={toggleMenu}
                 >
                     <svg
@@ -50,17 +47,16 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             <div
                 className={`md:hidden ${
                     isMenuOpen ? 'max-h-60' : 'max-h-0'
-                } overflow-hidden bg-gradient-to-r from-[#1e1e1e] via-gray-900 to-[#1d1d1d] transition-all duration-500`}
+                } overflow-hidden bg-gradient-to-r from-dark-accent via-dark-secondary to-dark-accent transition-all duration-500`}
             >
                 {['Home', 'Skills', 'Projects', 'Certification', 'Contact'].map((item) => (
                     <Link
                         key={item}
                         to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                        className="block text-lg text-gray-200 hover:bg-gray-700 hover:text-white px-6 py-3 transition duration-300"
+                        className="block text-lg text-dark-text hover:bg-gray-700 hover:text-white px-6 py-3 transition duration-300"
                     >
                         {item}
                     </Link>
