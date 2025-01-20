@@ -39,7 +39,7 @@ const Contact = () => {
     <div className="w-full bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-700 min-h-screen bg-gray-100 flex flex-col justify-center items-center px-4 pt-10">
       <Navbar />
       <section className="w-full sm:w-96 md:w-1/2 p-4 bg-gray-800 rounded-xl drop-shadow-lg">
-        <h2 className="text-3xl font-semibold text-white text-center mb-8">Contact Me</h2>
+        <h2 className="text-3xl border-b p-5 font-semibold text-white text-center mb-8">Contact Me</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="flex font-semibold flex-col mb-4">

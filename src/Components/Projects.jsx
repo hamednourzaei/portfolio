@@ -148,7 +148,7 @@ const Projects = () => {
     <div className="w-full min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900">
       <Navbar />
       <div className="flex flex-col justify-start items-center gap-10 px-5 py-20">
-        <h1 className="w-full p-5 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg text-center">
+        <h1 className="w-full p-5 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg text-center border-b">
           Projects
         </h1>
 

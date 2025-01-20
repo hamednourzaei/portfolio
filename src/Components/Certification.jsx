@@ -34,7 +34,7 @@ const Certification = () => {
       <Navbar />
       <div className="flex flex-col justify-center items-center gap-8 px-5 py-20">
       <h1
-  className="w-full p-5 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg text-center"
+  className="w-full border-b p-5 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r  from-yellow-500 via-red-500 to-blue-500 animate-bg text-center"
   style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}
 >
   Certifications
