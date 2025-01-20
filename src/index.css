@@ -1,15 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Fade-in Animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -17,7 +14,7 @@
   }
 }
 .animate-fadeIn {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 2s ease-out forwards; /* زمان کوتاهتر */
 }
 
 /* Bounce Animation for Icons */
@@ -26,48 +23,67 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(5px);
   }
 }
 .animate-bounceIcon {
-  animation: bounceIcon 1.5s infinite ease-in-out;
+  animation: bounceIcon 1s infinite ease-in-out;
 }
 
 /* Hover Scale & Rotation */
-.hover\\:rotate-3:hover {
+.hover\:rotate-3:hover {
   transform: rotate(3deg) scale(1.1);
 }
+
 /* ورود آرام و خاص */
 @keyframes skillEntry {
-    0% {
-      opacity: 0;
-      transform: scale(0.8) rotate(-5deg);
-    }
-    50% {
-      opacity: 0.6;
-      transform: scale(1.05) rotate(3deg);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1) rotate(0deg);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-3deg);
   }
-  .animate-skillEntry {
-    animation: skillEntry 0.8s ease-in-out;
+  10% {
+    opacity: 0.6;
+    transform: scale(1.05) rotate(2deg);
   }
-  
-  /* انیمیشن پالس برای آیکون‌ها */
-  @keyframes pulseIcon {
-    0%, 100% {
-      transform: scale(1);
-      filter: brightness(100%);
-    }
-    50% {
-      transform: scale(1.15);
-      filter: brightness(120%);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
   }
-  .animate-pulseIcon {
-    animation: pulseIcon 1.5s infinite ease-in-out;
+}
+.animate-skillEntry {
+  animation: skillEntry 0.8s ease-in-out;
+}
+
+/* انیمیشن پالس برای آیکون‌ها */
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(100%);
   }
-  
+  50% {
+    transform: scale(1.15);
+    filter: brightness(120%);
+  }
+}
+.animate-pulseIcon {
+  animation: pulseIcon 1.5s infinite ease-in-out;
+}
+
+/* انیمیشن Fade and Bounce */
+@keyframes fadeAndBounce {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-fadeAndBounce {
+  animation: fadeAndBounce 0.8s ease-in-out;
+}

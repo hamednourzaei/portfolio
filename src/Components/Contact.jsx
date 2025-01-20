@@ -36,13 +36,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center px-4 pt-10">
+    <div className="w-full  bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-700 min-h-screen bg-gray-100 flex flex-col justify-center items-center px-4 pt-10">
       <Navbar />
-      <section className="w-1/2 p-2 bg-white rounded-xl shadow-2xl">
-        <h2 className="text-3xl font-semibold text-gray-700 text-center mb-8">Contact Me</h2>
+      <section className="w-1/2 p-2  bg-gray-800 rounded-xl drop-shadow-lg ">
+        <h2 className="text-3xl font-semibold text-white text-center mb-8 p-5">Contact Me</h2>
 
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col mb-4">
+          <div className="flex font-semibold flex-col mb-4">
             <label htmlFor="name" className="text-gray-600 mb-2">Full Name</label>
             <input
               type="text"

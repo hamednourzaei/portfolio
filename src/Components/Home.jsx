@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const Home = () => {
     return (
-        <div className="w-full h-screen bg-cover bg-center flex flex-col bg-gradient-to-r from-gray-700 via-gray-800 to-gray-800 pt-20">
+        <div className="w-full h-screen bg-cover bg-center flex flex-col bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-800 pt-20">
             <Navbar />
 
             <div className="flex flex-1 flex-col md:flex-row items-center justify-center gap-16 px-6">
@@ -31,7 +31,7 @@ const Home = () => {
                         responsive, dynamic, and visually stunning user interfaces.
                     </p>
                     <a
-                        href="#portfolio"
+                        href="https://github.com/hamedmkm"
                         className="mt-4 px-6 py-3 text-white backdrop-brightness-150 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500"
                     >
                         View My Work
