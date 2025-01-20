@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const Home = () => {
     return (
-        <div className="w-full h-screen bg-cover bg-center flex flex-col bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-800 pt-20">
+        <div className="w-full min-h-screen bg-cover bg-center flex flex-col bg-gradient-to-r from-gray-700 animate-fadeAndBounce via-gray-800 to-gray-800 pt-20">
             <Navbar />
 
             <div className="flex flex-1 flex-col md:flex-row items-center justify-center gap-16 px-6">
@@ -24,7 +24,7 @@ const Home = () => {
                 Frontend Developer | متخصص در طراحی و توسعه رابط‌های کاربری مدرن
   </h1>
 
-  <p className="text-lg  text-right md:text-xl text-gray-200 max-w-2xl leading-relaxed justify-items-end ml-auto">
+  <p className="text-lg  text-right md:text-xl text-gray-200 max-w-2xl leading-relaxed justify-items-end ml-auto opacity-80">
   دنیای توسعه وب پر از فرصت‌های ناب برای خلاقیت و نوآوری است. ابزارهایی مدرن و کارآمد، امکان طراحی تجربه‌هایی چشم‌نواز و کاربرپسند را فراهم می‌کنند. 
   فناوری‌های پیشرفته با ارتقای سرعت و عملکرد، پروژه‌ها را به سطحی بالاتر می‌برند و مدیریت بهتر را به همراه می‌آورند. 
   یادگیری و استفاده از مفاهیم نوین برنامه‌نویسی، مسیری پویا و بی‌پایان برای رشد و خلق ایده‌های تازه فراهم می‌کند. 
@@ -42,15 +42,15 @@ const Home = () => {
 
                     <a
                         href="https://github.com/hamedmkm"
-                        className="mt-4 px-6 py-3 bg-clip-text bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg backdrop-brightness-150 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500
-                        justify-items-end ml-auto"
+                        className="mt-4 px-6 py-3 bg-clip-text font-bold bg-gradient-to-r from-yellow-500 via-red-500 to-blue-500 animate-bg backdrop-brightness-150 text-lg  rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500
+                        justify-items-end m-5 ml-auto"
                     >
                         View My Work
                     </a>
                 </div>
             </div>
 
-            <div className="text-center py-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-100 z-50 shadow-md border-b border-gray-600">
+            <div className="text-center py-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-100 z-50 shadow-md border-b border-gray-600 ">
                 © 2025 Hamed Nourzaie All rights reserved.
             </div>
         </div>
